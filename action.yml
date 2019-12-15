@@ -1,5 +1,8 @@
 name: 'fpm'
 description: 'Build packages for multiple platforms using github.com/jordansissel/fpm'
+branding:
+  icon: 'package'  
+  color: 'green'
 inputs:
   fpm-args:
     description: 'Arguments passed to the fpm cli tool'
