@@ -1,4 +1,4 @@
-name: 'fpm'
+name: 'action-fpm'
 description: 'Build packages for multiple platforms using github.com/jordansissel/fpm'
 branding:
   icon: 'package'  
