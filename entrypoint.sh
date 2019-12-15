@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-fpm "${1}"
+fpm $1
