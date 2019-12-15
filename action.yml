@@ -1,0 +1,11 @@
+name: 'fpm'
+description: 'Build packages for multiple platforms using github.com/jordansissel/fpm'
+inputs:
+  fpm-args:
+    description: 'Arguments passed to the fpm cli tool'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.fpm-args }}
