@@ -17,7 +17,8 @@ jobs:
     - name: Package
       uses: bpicode/github-action-fpm@master
       with:
-        fpm-args: '--debug -n mypackage -t deb -s dir ./build'
+        fpm_args: './build'
+        fpm_opts: '--debug -n mypackage -t deb -s dir'
 ```
 ## Inputs and Outputs
 

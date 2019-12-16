@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
-fpm $1
+set -e
+
+FPMOPTS="${INPUT_FPM_OPTS}" fpm $@

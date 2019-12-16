@@ -4,11 +4,14 @@ branding:
   icon: 'package'  
   color: 'green'
 inputs:
-  fpm-args:
+  fpm_opts:
+    description: 'Options passed to the fpm cli tool'
+    required: true
+  fpm_args:
     description: 'Arguments passed to the fpm cli tool'
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.fpm-args }}
+    - ${{ inputs.fpm_args }}
