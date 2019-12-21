@@ -19,5 +19,5 @@ jobs:
       env:
         CI: "true"
       run: |
-        wget -qO- https://github.com/wagoodman/dive/releases/download/v0.9.1/dive_0.9.1_linux_amd64.tar.gz | tar xvz -C /usr/local/bin
+        wget -qO- https://github.com/wagoodman/dive/releases/download/v0.9.1/dive_0.9.1_linux_amd64.tar.gz | sudo tar xvz -C /usr/local/bin
         dive github-action-fpm
