@@ -1,0 +1,23 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Check out source code
+      uses: actions/checkout@v1
+
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag github-action-fpm
+
+    - name: Explore docker image
+      env:
+        CI: "true"
+      run: |
+        wget -qO- https://github.com/wagoodman/dive/releases/download/v0.9.1/dive_0.9.1_linux_amd64.tar.gz | tar xvz -C /usr/local/bin
+        dive github-action-fpm
