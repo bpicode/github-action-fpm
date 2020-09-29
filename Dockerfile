@@ -7,6 +7,7 @@ LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="green"
 
 RUN apk --no-cache add build-base
+RUN apk --no-cache add rpm
 RUN apk --no-cache add tar
 RUN apk --no-cache add zip
 RUN gem install --no-document fpm -v 1.11.0
