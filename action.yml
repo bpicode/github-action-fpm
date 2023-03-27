@@ -12,6 +12,6 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'docker://eu.gcr.io/tradeshift-public/github-action-fpm'
+  image: 'docker://063399264027.dkr.ecr.eu-west-1.amazonaws.com/tradeshift-public/github-action-fpm'
   args:
     - ${{ inputs.fpm_args }}
