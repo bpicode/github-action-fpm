@@ -1,4 +1,4 @@
-FROM ruby:2-alpine
+FROM ruby:3-alpine
 LABEL "maintainer"="bpicode"
 
 LABEL "com.github.actions.name"="github-action-fpm"
